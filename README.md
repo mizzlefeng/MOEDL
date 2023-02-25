@@ -1,26 +1,5 @@
 # MOEDL
 
- A Deep Learning Model for Cancer Subtype Prediction
-
-1.代码文件夹中包含了*10fold.py可执行的程序文件，其中Model.py为MOEDL的模型文件。
-
-2.代码文件夹中的子文件夹*data是*10fold.py程序运行时所需要的数据，包含9个csv文件：
-	  *_G feature：基因表达的特征名称，
-	  *_G：基因表达矩阵数据，
-	  *_M feature：DNA甲基化的特征名称，
-	  *_M：DNA甲基化矩阵数据，
-	  *_mi feature：miRNA的特征名称，
-	  *_mi：miRNA表达矩阵数据，
-	  *_P feature：反相蛋白质微阵列的特征名称，
-	  *_P：反相蛋白质微阵列数据，
-	  *_label：BRCA的标签信息
-
-3.如何运行*10fold.py程序：安装pytorch后，直接运行运行此程序即可。
-
-4.结果：在程序运行完之后自动在当前文件夹中生成MOEDL 10fold.txt作为结果文件，此文件的内容就是10次10折验证结果。  
-
-
-
 ## 1 System requirements:
 
 ```
@@ -47,7 +26,7 @@ Fourth, open Anaconda Prompt to create a virtual environment by the following co
 	conda env create -n env_name python=3.7.4
 ```
 
-## 3 Instructions to run on a small real dataset(Demo)
+## 3 Instructions to run on a small real dataset(demo)
 
 ```
 Based on a small dataset from BRCA dataset:
