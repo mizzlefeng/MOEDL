@@ -2,8 +2,6 @@
 
  A Deep Learning Model for Cancer Subtype Prediction
 
-aaa
-
 1.代码文件夹中包含了*10fold.py可执行的程序文件，其中Model.py为MOEDL的模型文件。
 
 2.代码文件夹中的子文件夹*data是*10fold.py程序运行时所需要的数据，包含9个csv文件：
