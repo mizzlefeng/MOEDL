@@ -51,7 +51,7 @@ Fourth, open Anaconda Prompt to create a virtual environment by the following co
 
 ```
 Based on a small dataset from kiba dataset:
-	First, put folder data_kiba, DataHelper.py, emetrics.py and Demo.py into the same folder.
+	First, put folder demodata, demo.py, model.py and Demo.py into the same folder.
 	Second, use PyCharm to open Demo.py and set the python interpreter of PyCharm.
 	Third, modify codes in Demo.py to set the path for loading data and the path for saving the trained model. The details are as follows:
 		line 249 in Demo.py
