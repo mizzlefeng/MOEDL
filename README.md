@@ -50,62 +50,43 @@ Fourth, open Anaconda Prompt to create a virtual environment by the following co
 ## 3 Instructions to run on a small real dataset(Demo)
 
 ```
-Based on a small dataset from kiba dataset:
-	First, put folder demodata, demo.py, model.py and Demo.py into the same folder.
-	Second, use PyCharm to open Demo.py and set the python interpreter of PyCharm.
-	Third, modify codes in Demo.py to set the path for loading data and the path for saving the trained model. The details are as follows:
-		line 249 in Demo.py
-		line 268 in Demo.py
-	Fourth, open Anaconda Prompt and enter the following command:
-		activate env_name
-	Fifth, run Demo.py in PyCharm.
+Based on a small dataset from BRCA dataset:
+	First, put folder demodata, demo.py and Model.py into the same folder.
+	Second, use PyCharm to open demo.py and set the python interpreter of PyCharm.
+	Third, modify codes in demo.py to set the path for loading data and the path for saving the trained model.
+	Fourth, run Demo.py in PyCharm.
 
 	Expected output：
-		The kiba scores between drugs and targets in test set of the small dataset would be output as a csv file.
-	
-	Expected run time on a "normal" desktop computer:
-		The run time in our coumputer (CPU:Xeon 3106, GPU NVIDIA Geforce RTX 2080 Ti, ARM 64G) is about 5 minutes.
-
-	Note: in the csv file, drug SMILES, protein sequences and binding affinity values are displayed in column 1, column 2 and column 3, respectively. 
+		A txt file with timestamps and results of all evaluation metrics and training curves.
 ```
 
-## 4 Instructions for use(two benchmark datasets are included in our data):
+## 4 Instructions for use(three benchmark datasets are included in our data):
 
 ```
-Based on kiba dataset:
-	First, put folder data_kiba, DataHelper.py, emetrics.py and MRBDTA.py into the same folder.
-	Second, use PyCharm to open MRBDTA.py and set the python interpreter of PyCharm.
-	Third, modify codes in MRBDTA.py to set the path for loading data and the path for saving the trained model. The details are as follows:
-		line 287 in MRBDTA.py
-		line 384-388 in MRBDTA.py
-	Fourth, open Anaconda Prompt and enter the following command:
-		activate env_name
-	Fifth, run MRBDTA.py in PyCharm.
+Based on BRCA dataset:
+	First, put folder BRCAdata, BRCA10fold.py and Model.py into the same folder.
+	Second, use PyCharm to open BRCA10fold.py and set the python interpreter of PyCharm.
+	Third, modify codes in BRCA10fold.py to set the path for loading data and the path for saving the trained model.
+	Fourth, run BRCA10fold.py in PyCharm.
 
 	Expected output：
-		Results (MSE, CI, RM2) predicted by MRBDTA on test set of KIBA dataset for 5 times would be output as three csv files, respectively.
+		A txt file with timestamps and results of all evaluation metrics and training curves.
 
-	Expected run time on a "normal" desktop computer:
-		The run time in our coumputer (CPU:Xeon 3106, GPU NVIDIA Geforce RTX 2080 Ti, ARM 64G) is about 168 hours (seven days).
-
-Based on davis dataset:
-	First, put folder data_davis, DataHelper.py, emetrics.py and MRBDTA.py into the same folder.
-	Second, use PyCharm to open MRBDTA.py and set the python interpreter of PyCharm.
-	Third, modify codes in MRBDTA.py to set parameters for the davis dataset. The details are as follows:
-		line 279-286 in MRBDTA.py: 'max length for drugs, max length for proteins, trian set, test set'.
-		line 291 in MRBDTA.py: 'drug, target, affinity = DH.LoadData(fpath_kiba, logspance_trans=False)' -> 'drug, target, affinity = DH.LoadData(fpath_davis, logspance_trans=True)'.
-		line 398 in MRBDTA.py: 'EPOCHS, batch_size, accumulation_steps = 600, 32, 32' -> 'EPOCHS, batch_size, accumulation_steps = 300, 32, 8'.
-		line 300-346 in MRBDTA.py
-	Fourth, modify codes in MRBDTA.py to set the path for loading data and the path for saving the trained model. The details are as follows:
-		line 282 in MRBDTA.py
-		line 384-388 in MRBDTA.py
-	Fifth, open Anaconda Prompt and enter the following command:
-		activate env_name
-	Sixth, run MRBDTA.py in PyCharm.
+Based on KIPAN dataset:
+	First, put folder KIPANdata, KIPAN10fold.py and Model.py into the same folder.
+	Second, use PyCharm to open KIPAN10fold.py and set the python interpreter of PyCharm.
+	Third, modify codes in KIPAN10fold.py to set the path for loading data and the path for saving the trained model.
+	Fourth, run KIPAN10fold.py in PyCharm.
 
 	Expected output：
-		Results (MSE, CI, RM2) predicted by MRBDTA on test set of davis dataset for 5 times would be output as three csv files, respectively.
+		A txt file with timestamps and results of all evaluation metrics and training curves.
 
-	Expected run time on a "normal" desktop computer:
-		The run time in our coumputer (CPU:Xeon 3106, GPU NVIDIA Geforce RTX 2080 Ti, ARM 64G) is about 96 hours (four days).
+Based on NSCLC dataset:
+	First, put folder NSCLCdata, NSCLC10fold.py and Model.py into the same folder.
+	Second, use PyCharm to open NSCLC10fold.py and set the python interpreter of PyCharm.
+	Third, modify codes in NSCLC10fold.py to set the path for loading data and the path for saving the trained model.
+	Fourth, run NSCLC10fold.py in PyCharm.
+
+	Expected output：
+		A txt file with timestamps and results of all evaluation metrics and training curves.
 ```
